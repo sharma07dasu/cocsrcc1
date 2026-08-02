@@ -1,5 +1,5 @@
 /* ============================================
-   Cases Over Coffee, SRCC — Design Tokens
+   Cases Over Coffee, SRCC: Design Tokens
    ============================================ */
 :root {
   --cream:        #FAF6ED;
@@ -209,7 +209,7 @@ footer .brand-name small { color: rgba(247,243,233,0.5); }
   .brand-name { display: none; }
 }
 
-/* Decorative corner mark — the ring icon, peeking in from the edge of a
+/* Decorative corner mark: the ring icon, peeking in from the edge of a
    section, echoing how the brand deck lets the cup-ring bleed off-frame. */
 .hero, .page-hero { position: relative; overflow: hidden; }
 .hero-bg {
@@ -379,7 +379,7 @@ nav.links a.nav-cta::after { display: none; }
   color: var(--terracotta-dim);
   font-size: 1.15rem;
   margin: 22px 0 34px;
-  max-width: 560px;
+  max-width: 620px;
 }
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
 
@@ -720,7 +720,7 @@ section.tight { padding: 50px 0; }
 .project-card ul li { margin-bottom: 4px; }
 .project-card p.impact { font-size: 0.88rem; color: var(--espresso-70); margin: 0; }
 
-/* logo marquee — laterally scrolling strip of project logos */
+/* logo marquee: laterally scrolling strip of project logos */
 .marquee {
   width: 100%;
   overflow: hidden;
