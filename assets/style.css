@@ -379,7 +379,10 @@ nav.links a.nav-cta::after { display: none; }
   color: var(--terracotta-dim);
   font-size: 1.15rem;
   margin: 22px 0 34px;
-  max-width: 620px;
+  max-width: 800px;
+}
+@media (max-width: 850px) {
+  .hero-tag { max-width: 100%; }
 }
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
 
