@@ -253,6 +253,19 @@ footer .brand-name small { color: rgba(247,243,233,0.5); }
 @media (prefers-reduced-motion: reduce) {
   .corner-mark { animation: none; }
 }
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.nav-crest {
+  height: 40px;
+  width: auto;
+  flex-shrink: 0;
+}
+@media (max-width: 700px) {
+  .nav-crest { display: none; }
+}
 nav.links {
   display: flex;
   gap: 30px;
@@ -450,6 +463,13 @@ section.tight { padding: 50px 0; }
   gap: 0;
   border-top: 1px solid var(--clay-line);
   border-bottom: 1px solid var(--clay-line);
+}
+.stats.stats-5 { grid-template-columns: repeat(5, 1fr); }
+@media (max-width: 900px) {
+  .stats.stats-5 { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 700px) {
+  .stats.stats-5 { grid-template-columns: repeat(2, 1fr); }
 }
 .stat {
   padding: 32px 24px;
