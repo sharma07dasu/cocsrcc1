@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Count-up animation for stat numbers (e.g. "1,400+" counts up from 0)
-  var statNums = document.querySelectorAll('.stat .num');
+  var statNums = document.querySelectorAll('.stat .num, .flagship-stat .num');
   function animateCount(el) {
     var text = el.textContent.trim();
     var match = text.match(/^([\d,]+)(.*)$/);

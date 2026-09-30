@@ -175,7 +175,7 @@ header.site-nav {
 }
 
 .brand-logo {
-  height: 52px;
+  height: 44px;
   width: auto;
   display: block;
 }
@@ -185,6 +185,14 @@ header.site-nav {
   background: var(--cream);
   border-radius: var(--radius);
 }
+.brand-divider {
+  width: 1px;
+  height: 30px;
+  background: var(--clay-line);
+  flex-shrink: 0;
+  display: block;
+}
+footer .brand-divider { background: rgba(247,243,233,0.2); }
 .brand-name {
   font-family: var(--font-body);
   font-weight: 700;
@@ -259,12 +267,14 @@ footer .brand-name small { color: rgba(247,243,233,0.5); }
   gap: 24px;
 }
 .nav-crest {
-  height: 40px;
+  height: 32px;
   width: auto;
   flex-shrink: 0;
 }
-@media (max-width: 700px) {
-  .nav-crest { display: none; }
+@media (max-width: 480px) {
+  .brand-logo { height: 36px; }
+  .nav-crest { height: 26px; }
+  .brand-divider { height: 24px; }
 }
 nav.links {
   display: flex;
@@ -464,12 +474,47 @@ section.tight { padding: 50px 0; }
   border-top: 1px solid var(--clay-line);
   border-bottom: 1px solid var(--clay-line);
 }
-.stats.stats-5 { grid-template-columns: repeat(5, 1fr); }
-@media (max-width: 900px) {
-  .stats.stats-5 { grid-template-columns: repeat(3, 1fr); }
+.flagship-stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 32px;
 }
-@media (max-width: 700px) {
-  .stats.stats-5 { grid-template-columns: repeat(2, 1fr); }
+.flagship-stat {
+  background: var(--white);
+  border: 1px solid var(--clay-line);
+  border-radius: var(--radius);
+  padding: 24px 12px;
+  text-align: center;
+  transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.flagship-stat:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--terracotta);
+}
+.flagship-stat .num {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 600;
+  background: var(--grad-warm);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: block;
+  line-height: 1.15;
+}
+.flagship-stat .label {
+  font-size: 0.78rem;
+  color: var(--espresso-70);
+  margin-top: 6px;
+  line-height: 1.3;
+}
+@media (max-width: 900px) {
+  .flagship-stats { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 560px) {
+  .flagship-stats { grid-template-columns: repeat(2, 1fr); }
 }
 .stat {
   padding: 32px 24px;
