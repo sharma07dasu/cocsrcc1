@@ -180,8 +180,8 @@ header.site-nav {
   display: block;
 }
 .brand-logo-footer {
-  height: 68px;
-  padding: 14px 18px;
+  height: 84px;
+  padding: 12px 16px;
   background: var(--cream);
   border-radius: var(--radius);
 }
@@ -267,7 +267,7 @@ footer .brand-name small { color: rgba(247,243,233,0.5); }
   gap: 24px;
 }
 .nav-crest {
-  height: 32px;
+  height: 42px;
   width: auto;
   flex-shrink: 0;
 }
@@ -514,7 +514,16 @@ section.tight { padding: 50px 0; }
   .flagship-stats { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 560px) {
-  .flagship-stats { grid-template-columns: repeat(2, 1fr); }
+  .flagship-stats { grid-template-columns: 1fr; gap: 10px; }
+  .flagship-stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 16px 20px;
+  }
+  .flagship-stat .num { font-size: 1.5rem; }
+  .flagship-stat .label { margin-top: 0; text-align: right; max-width: 60%; }
 }
 .stat {
   padding: 32px 24px;
