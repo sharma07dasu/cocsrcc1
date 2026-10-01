@@ -273,7 +273,7 @@ footer .brand-name small { color: rgba(247,243,233,0.5); }
 }
 @media (max-width: 480px) {
   .brand-logo { height: 36px; }
-  .nav-crest { height: 26px; }
+  .nav-crest { height: 34px; }
   .brand-divider { height: 24px; }
 }
 nav.links {
